@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .models import post
 
 def home(request):
-    return HttpResponse('Hello Class')
+    return render(request, 'blog/home.html')
 
 def about(request):
     context = {
